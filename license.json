@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Add npmx.dev license badge to Renovate PR bodies",
+  "prBodyDefinitions": {
+    "npmx license": "[![license](https://npmx.dev/api/registry/badge/license/{{depName}})](https://npmx.dev/package/{{depName}})"
+  },
+  "prBodyColumns": ["Package", "Type", "Update", "Change", "npmx license"]
+}

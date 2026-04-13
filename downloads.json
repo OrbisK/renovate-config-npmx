@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Add npmx.dev downloads badge to Renovate PR bodies",
+  "prBodyDefinitions": {
+    "npmx downloads": "[![downloads](https://npmx.dev/api/registry/badge/downloads/{{depName}})](https://npmx.dev/package/{{depName}})"
+  },
+  "prBodyColumns": ["Package", "Type", "Update", "Change", "npmx downloads"]
+}

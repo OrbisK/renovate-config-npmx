@@ -1,0 +1,8 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Add npmx.dev vulnerabilities badge to Renovate PR bodies",
+  "prBodyDefinitions": {
+    "npmx vulnerabilities": "[![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/{{depName}})](https://npmx.dev/package/{{depName}})"
+  },
+  "prBodyColumns": ["Package", "Type", "Update", "Change", "npmx vulnerabilities"]
+}
