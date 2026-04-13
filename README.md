@@ -10,7 +10,7 @@ Add to your `renovate.json`:
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx#0.0.5"
+    "github>OrbisK/renovate-config-npmx#0.0.6"
   ]
 }
 ```
@@ -27,7 +27,7 @@ A lighter-weight alternative showing downloads, vulnerabilities, and deprecated 
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx:minimal#0.0.5"
+    "github>OrbisK/renovate-config-npmx:minimal#0.0.6"
   ]
 }
 ```
@@ -65,7 +65,7 @@ To show multiple badge columns, use the `columns` preset and set `prBodyColumns`
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx:columns#0.0.5"
+    "github>OrbisK/renovate-config-npmx:columns#0.0.6"
   ],
   "packageRules": [
     {
@@ -87,7 +87,7 @@ The `columns` preset defines all badge column definitions without setting `prBod
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx:columns#0.0.5"
+    "github>OrbisK/renovate-config-npmx:columns#0.0.6"
   ],
   "packageRules": [
     {
@@ -110,7 +110,7 @@ To override, define `prBodyColumns` directly in your `renovate.json`:
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx#0.0.5"
+    "github>OrbisK/renovate-config-npmx#0.0.6"
   ],
   "prBodyColumns": ["Package", "Type", "Update", "Change", "npmx"]
 }
@@ -127,7 +127,7 @@ If you use `mergeConfidence:all-badges` (which adds `Adoption` and `Passing` col
   "extends": [
     "config:best-practices",
     "mergeConfidence:all-badges",
-    "github>OrbisK/renovate-config-npmx#0.0.5"
+    "github>OrbisK/renovate-config-npmx#0.0.6"
   ]
 }
 ```
@@ -139,7 +139,7 @@ If you want all Merge Confidence columns (`Adoption`, `Passing`) alongside the n
   "extends": [
     "config:best-practices",
     "mergeConfidence:all-badges",
-    "github>OrbisK/renovate-config-npmx#0.0.5"
+    "github>OrbisK/renovate-config-npmx#0.0.6"
   ],
   "prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence", "npmx"]
 }
