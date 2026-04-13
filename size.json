@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Add npmx.dev size badge to Renovate PR bodies",
-  "extends": ["github>OrbisK/renovate-config-npmx:columns"],
+  "extends": ["github>OrbisK/renovate-config-npmx:columns#0.0.3"],
   "packageRules": [
     {
       "matchDatasources": ["npm"],
