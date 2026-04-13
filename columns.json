@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Define all npmx.dev badge columns for use by other presets",
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "prBodyDefinitions": {
+        "npmx": "[![downloads](https://npmx.dev/api/registry/badge/downloads/{{depName}})](https://npmx.dev/package/{{depName}}) [![license](https://npmx.dev/api/registry/badge/license/{{depName}})](https://npmx.dev/package/{{depName}}) [![types](https://npmx.dev/api/registry/badge/types/{{depName}})](https://npmx.dev/package/{{depName}}) [![size](https://npmx.dev/api/registry/badge/size/{{depName}})](https://npmx.dev/package/{{depName}}) [![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/{{depName}})](https://npmx.dev/package/{{depName}}) [![deprecated](https://npmx.dev/api/registry/badge/deprecated/{{depName}})](https://npmx.dev/package/{{depName}})",
+        "npmx downloads": "[![downloads](https://npmx.dev/api/registry/badge/downloads/{{depName}})](https://npmx.dev/package/{{depName}})",
+        "npmx license": "[![license](https://npmx.dev/api/registry/badge/license/{{depName}})](https://npmx.dev/package/{{depName}})",
+        "npmx types": "[![types](https://npmx.dev/api/registry/badge/types/{{depName}})](https://npmx.dev/package/{{depName}})",
+        "npmx size": "[![size](https://npmx.dev/api/registry/badge/size/{{depName}})](https://npmx.dev/package/{{depName}})",
+        "npmx vulnerabilities": "[![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/{{depName}})](https://npmx.dev/package/{{depName}})",
+        "npmx deprecated": "[![deprecated](https://npmx.dev/api/registry/badge/deprecated/{{depName}})](https://npmx.dev/package/{{depName}})"
+      }
+    }
+  ]
+}

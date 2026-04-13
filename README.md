@@ -9,7 +9,7 @@ Add to your `renovate.json`:
 ```json
 {
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     "github>OrbisK/renovate-config-npmx"
   ]
 }
@@ -21,12 +21,12 @@ The default `prBodyColumns` are: `Package`, `Change`, `Age`, `Confidence`, `npmx
 
 ### Minimal preset
 
-A lighter-weight alternative with only downloads, vulnerabilities, and deprecated badges:
+A lighter-weight alternative showing downloads, vulnerabilities, and deprecated as individual columns:
 
 ```json
 {
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     "github>OrbisK/renovate-config-npmx:minimal"
   ]
 }
@@ -45,17 +45,26 @@ Each badge type is available as a standalone preset with its own column:
 | `github>OrbisK/renovate-config-npmx:vulnerabilities` | npmx vulnerabilities | ![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/vue) |
 | `github>OrbisK/renovate-config-npmx:deprecated` | npmx deprecated | ![deprecated](https://npmx.dev/api/registry/badge/deprecated/vue) |
 
-Individual presets can be combined — each adds its own column:
+### Columns preset
+
+The `columns` preset defines all badge column definitions without setting `prBodyColumns`. Use it when you want full control over which columns appear:
 
 ```json
 {
   "extends": [
-    "config:recommended",
-    "github>OrbisK/renovate-config-npmx:downloads",
-    "github>OrbisK/renovate-config-npmx:types"
+    "config:best-practices",
+    "github>OrbisK/renovate-config-npmx:columns"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "prBodyColumns": ["Package", "Change", "npmx downloads", "npmx types"]
+    }
   ]
 }
 ```
+
+Available column names: `npmx` (all badges combined), `npmx downloads`, `npmx license`, `npmx types`, `npmx size`, `npmx vulnerabilities`, `npmx deprecated`.
 
 ## Customizing `prBodyColumns`
 
@@ -66,7 +75,7 @@ To override, define `prBodyColumns` directly in your `renovate.json`:
 ```json
 {
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     "github>OrbisK/renovate-config-npmx"
   ],
   "prBodyColumns": ["Package", "Type", "Update", "Change", "npmx"]
@@ -82,7 +91,7 @@ If you use `mergeConfidence:all-badges` (which adds `Adoption` and `Passing` col
 ```json
 {
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     "mergeConfidence:all-badges",
     "github>OrbisK/renovate-config-npmx"
   ]
@@ -94,7 +103,7 @@ If you want all Merge Confidence columns (`Adoption`, `Passing`) alongside the n
 ```json
 {
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     "mergeConfidence:all-badges",
     "github>OrbisK/renovate-config-npmx"
   ],
