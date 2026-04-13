@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Add npmx.dev maintainers badge to Renovate PR bodies",
-  "extends": ["github>OrbisK/renovate-config-npmx:columns#0.0.3"],
+  "extends": ["github>OrbisK/renovate-config-npmx:columns#0.0.4"],
   "packageRules": [
     {
       "matchDatasources": ["npm"],

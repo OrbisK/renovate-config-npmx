@@ -10,7 +10,7 @@ Add to your `renovate.json`:
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx#0.0.3"
+    "github>OrbisK/renovate-config-npmx#0.0.4"
   ]
 }
 ```
@@ -27,7 +27,7 @@ A lighter-weight alternative showing downloads, vulnerabilities, and deprecated 
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx:minimal#0.0.3"
+    "github>OrbisK/renovate-config-npmx:minimal#0.0.4"
   ]
 }
 ```
@@ -38,24 +38,24 @@ Each badge type is available as a standalone preset with its own column:
 
 | Preset | Column | Badge |
 |--------|--------|-------|
-| `github>OrbisK/renovate-config-npmx:version#0.0.3` | npmx version | ![version](https://npmx.dev/api/registry/badge/version/vue) |
-| `github>OrbisK/renovate-config-npmx:license#0.0.3` | npmx license | ![license](https://npmx.dev/api/registry/badge/license/vue) |
-| `github>OrbisK/renovate-config-npmx:size#0.0.3` | npmx size | ![size](https://npmx.dev/api/registry/badge/size/vue) |
-| `github>OrbisK/renovate-config-npmx:downloads#0.0.3` | npmx downloads | ![downloads](https://npmx.dev/api/registry/badge/downloads/vue) |
-| `github>OrbisK/renovate-config-npmx:downloads-day#0.0.3` | npmx downloads-day | ![downloads-day](https://npmx.dev/api/registry/badge/downloads-day/vue) |
-| `github>OrbisK/renovate-config-npmx:downloads-week#0.0.3` | npmx downloads-week | ![downloads-week](https://npmx.dev/api/registry/badge/downloads-week/vue) |
-| `github>OrbisK/renovate-config-npmx:downloads-month#0.0.3` | npmx downloads-month | ![downloads-month](https://npmx.dev/api/registry/badge/downloads-month/vue) |
-| `github>OrbisK/renovate-config-npmx:downloads-year#0.0.3` | npmx downloads-year | ![downloads-year](https://npmx.dev/api/registry/badge/downloads-year/vue) |
-| `github>OrbisK/renovate-config-npmx:vulnerabilities#0.0.3` | npmx vulnerabilities | ![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/vue) |
-| `github>OrbisK/renovate-config-npmx:dependencies#0.0.3` | npmx dependencies | ![dependencies](https://npmx.dev/api/registry/badge/dependencies/vue) |
-| `github>OrbisK/renovate-config-npmx:created#0.0.3` | npmx created | ![created](https://npmx.dev/api/registry/badge/created/vue) |
-| `github>OrbisK/renovate-config-npmx:updated#0.0.3` | npmx updated | ![updated](https://npmx.dev/api/registry/badge/updated/vue) |
-| `github>OrbisK/renovate-config-npmx:engines#0.0.3` | npmx engines | ![engines](https://npmx.dev/api/registry/badge/engines/vue) |
-| `github>OrbisK/renovate-config-npmx:types#0.0.3` | npmx types | ![types](https://npmx.dev/api/registry/badge/types/vue) |
-| `github>OrbisK/renovate-config-npmx:maintainers#0.0.3` | npmx maintainers | ![maintainers](https://npmx.dev/api/registry/badge/maintainers/vue) |
-| `github>OrbisK/renovate-config-npmx:deprecated#0.0.3` | npmx deprecated | ![deprecated](https://npmx.dev/api/registry/badge/deprecated/vue) |
-| `github>OrbisK/renovate-config-npmx:name#0.0.3` | npmx name | ![name](https://npmx.dev/api/registry/badge/name/vue) |
-| `github>OrbisK/renovate-config-npmx:likes#0.0.3` | npmx likes | ![likes](https://npmx.dev/api/registry/badge/likes/vue) |
+| `github>OrbisK/renovate-config-npmx:version#0.0.4 | npmx version | ![version](https://npmx.dev/api/registry/badge/version/vue) |
+| `github>OrbisK/renovate-config-npmx:license#0.0.4 | npmx license | ![license](https://npmx.dev/api/registry/badge/license/vue) |
+| `github>OrbisK/renovate-config-npmx:size#0.0.4 | npmx size | ![size](https://npmx.dev/api/registry/badge/size/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads#0.0.4 | npmx downloads | ![downloads](https://npmx.dev/api/registry/badge/downloads/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads-day#0.0.4 | npmx downloads-day | ![downloads-day](https://npmx.dev/api/registry/badge/downloads-day/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads-week#0.0.4 | npmx downloads-week | ![downloads-week](https://npmx.dev/api/registry/badge/downloads-week/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads-month#0.0.4 | npmx downloads-month | ![downloads-month](https://npmx.dev/api/registry/badge/downloads-month/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads-year#0.0.4 | npmx downloads-year | ![downloads-year](https://npmx.dev/api/registry/badge/downloads-year/vue) |
+| `github>OrbisK/renovate-config-npmx:vulnerabilities#0.0.4 | npmx vulnerabilities | ![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/vue) |
+| `github>OrbisK/renovate-config-npmx:dependencies#0.0.4 | npmx dependencies | ![dependencies](https://npmx.dev/api/registry/badge/dependencies/vue) |
+| `github>OrbisK/renovate-config-npmx:created#0.0.4 | npmx created | ![created](https://npmx.dev/api/registry/badge/created/vue) |
+| `github>OrbisK/renovate-config-npmx:updated#0.0.4 | npmx updated | ![updated](https://npmx.dev/api/registry/badge/updated/vue) |
+| `github>OrbisK/renovate-config-npmx:engines#0.0.4 | npmx engines | ![engines](https://npmx.dev/api/registry/badge/engines/vue) |
+| `github>OrbisK/renovate-config-npmx:types#0.0.4 | npmx types | ![types](https://npmx.dev/api/registry/badge/types/vue) |
+| `github>OrbisK/renovate-config-npmx:maintainers#0.0.4 | npmx maintainers | ![maintainers](https://npmx.dev/api/registry/badge/maintainers/vue) |
+| `github>OrbisK/renovate-config-npmx:deprecated#0.0.4 | npmx deprecated | ![deprecated](https://npmx.dev/api/registry/badge/deprecated/vue) |
+| `github>OrbisK/renovate-config-npmx:name#0.0.4 | npmx name | ![name](https://npmx.dev/api/registry/badge/name/vue) |
+| `github>OrbisK/renovate-config-npmx:likes#0.0.4 | npmx likes | ![likes](https://npmx.dev/api/registry/badge/likes/vue) |
 
 ### Columns preset
 
@@ -65,7 +65,7 @@ The `columns` preset defines all badge column definitions without setting `prBod
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx:columns#0.0.3"
+    "github>OrbisK/renovate-config-npmx:columns#0.0.4"
   ],
   "packageRules": [
     {
@@ -88,7 +88,7 @@ To override, define `prBodyColumns` directly in your `renovate.json`:
 {
   "extends": [
     "config:best-practices",
-    "github>OrbisK/renovate-config-npmx#0.0.3"
+    "github>OrbisK/renovate-config-npmx#0.0.4"
   ],
   "prBodyColumns": ["Package", "Type", "Update", "Change", "npmx"]
 }
@@ -105,7 +105,7 @@ If you use `mergeConfidence:all-badges` (which adds `Adoption` and `Passing` col
   "extends": [
     "config:best-practices",
     "mergeConfidence:all-badges",
-    "github>OrbisK/renovate-config-npmx#0.0.3"
+    "github>OrbisK/renovate-config-npmx#0.0.4"
   ]
 }
 ```
@@ -117,7 +117,7 @@ If you want all Merge Confidence columns (`Adoption`, `Passing`) alongside the n
   "extends": [
     "config:best-practices",
     "mergeConfidence:all-badges",
-    "github>OrbisK/renovate-config-npmx#0.0.3"
+    "github>OrbisK/renovate-config-npmx#0.0.4"
   ],
   "prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence", "npmx"]
 }
