@@ -5,7 +5,7 @@
     {
       "matchDatasources": ["npm"],
       "prBodyDefinitions": {
-        "npmx": "[![downloads](https://npmx.dev/api/registry/badge/downloads/{{depName}})](https://npmx.dev/package/{{depName}}) [![license](https://npmx.dev/api/registry/badge/license/{{depName}})](https://npmx.dev/package/{{depName}}) [![types](https://npmx.dev/api/registry/badge/types/{{depName}})](https://npmx.dev/package/{{depName}}) [![size](https://npmx.dev/api/registry/badge/size/{{depName}})](https://npmx.dev/package/{{depName}}) [![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/{{depName}})](https://npmx.dev/package/{{depName}}) [![deprecated](https://npmx.dev/api/registry/badge/deprecated/{{depName}})](https://npmx.dev/package/{{depName}})",
+        "npmx": "[![size](https://npmx.dev/api/registry/badge/size/{{depName}})](https://npmx.dev/package/{{depName}}) [![dependencies](https://npmx.dev/api/registry/badge/dependencies/{{depName}})](https://npmx.dev/package/{{depName}})",
         "npmx version": "[![version](https://npmx.dev/api/registry/badge/version/{{depName}})](https://npmx.dev/package/{{depName}})",
         "npmx license": "[![license](https://npmx.dev/api/registry/badge/license/{{depName}})](https://npmx.dev/package/{{depName}})",
         "npmx size": "[![size](https://npmx.dev/api/registry/badge/size/{{depName}})](https://npmx.dev/package/{{depName}})",
