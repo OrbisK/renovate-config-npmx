@@ -57,6 +57,28 @@ Each badge type is available as a standalone preset with its own column:
 | `github>OrbisK/renovate-config-npmx:name` | npmx name            | ![name](https://npmx.dev/api/registry/badge/name/vue)                       |
 | `github>OrbisK/renovate-config-npmx:likes` | npmx likes           | ![likes](https://npmx.dev/api/registry/badge/likes/vue)                     |
 
+### Combining individual badge columns
+
+To show multiple badge columns, use the `columns` preset and set `prBodyColumns` to include the columns you want:
+
+```json
+{
+  "extends": [
+    "config:best-practices",
+    "github>OrbisK/renovate-config-npmx:columns#0.0.3"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "prBodyColumns": ["Package", "Change", "Age", "Confidence", "npmx downloads", "npmx types", "npmx vulnerabilities"]
+    }
+  ]
+}
+```
+
+> [!NOTE]
+> Individual presets (e.g. `:downloads`, `:types`) each set their own `prBodyColumns`. Since Renovate does **not** merge `prBodyColumns` across presets, extending multiple individual presets will only keep the columns from the last one. Use the `:columns` preset instead and list the columns explicitly.
+
 ### Columns preset
 
 The `columns` preset defines all badge column definitions without setting `prBodyColumns`. Use it when you want full control over which columns appear:
