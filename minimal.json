@@ -6,7 +6,7 @@
     {
       "matchDatasources": ["npm"],
       "prBodyDefinitions": {
-        "npmx": "[![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/{{depName}})](https://npmx.dev/package/{{depName}}) [![size](https://npmx.dev/api/registry/badge/size/{{depName}})](https://npmx.dev/package/{{depName}}) [![types](https://npmx.dev/api/registry/badge/types/{{depName}})](https://npmx.dev/package/{{depName}})"
+        "npmx": "[![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/{{depName}})](https://npmx.dev/package/{{depName}}) [![size](https://npmx.dev/api/registry/badge/size/{{depName}})](https://npmx.dev/package/{{depName}})"
       },
       "prBodyColumns": ["Package", "Change", "Age", "Confidence", "npmx"]
     }
