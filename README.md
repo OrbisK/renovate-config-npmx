@@ -1,6 +1,6 @@
 # renovate-config-npmx
 
-Renovate preset that adds [npmx.dev](https://npmx.dev) badges to dependency update PR bodies.
+Renovate preset that adds [npmx.dev](https://npmx.dev) badges to dependency update PR bodies. Only applies to npm dependencies.
 
 ## Usage
 
@@ -15,9 +15,24 @@ Add to your `renovate.json`:
 }
 ```
 
-This adds a single **npmx** column to the PR body table containing badges for downloads, license, types, size, vulnerabilities, and deprecated status.
+This adds a single **npmx** column containing badges for downloads, license, types, size, vulnerabilities, and deprecated status.
 
-## Individual presets
+The default `prBodyColumns` are: `Package`, `Change`, `Age`, `Confidence`, `npmx`.
+
+### Minimal preset
+
+A lighter-weight alternative with only downloads, vulnerabilities, and deprecated badges:
+
+```json
+{
+  "extends": [
+    "config:recommended",
+    "github>OrbisK/renovate-config-npmx:minimal"
+  ]
+}
+```
+
+### Individual presets
 
 Each badge type is available as a standalone preset with its own column:
 
@@ -39,6 +54,51 @@ Individual presets can be combined — each adds its own column:
     "github>OrbisK/renovate-config-npmx:downloads",
     "github>OrbisK/renovate-config-npmx:types"
   ]
+}
+```
+
+## Customizing `prBodyColumns`
+
+Each preset sets `prBodyColumns` to include its badge column(s). Since `prBodyColumns` is **not merged** across presets — the last preset in the `extends` array wins — you may need to override it in your config if you combine this preset with others that also define `prBodyColumns`.
+
+To override, define `prBodyColumns` directly in your `renovate.json`:
+
+```json
+{
+  "extends": [
+    "config:recommended",
+    "github>OrbisK/renovate-config-npmx"
+  ],
+  "prBodyColumns": ["Package", "Type", "Update", "Change", "npmx"]
+}
+```
+
+## Usage with Merge Confidence
+
+The default and minimal presets already include `Age` and `Confidence` in their `prBodyColumns`, so they work alongside Merge Confidence out of the box.
+
+If you use `mergeConfidence:all-badges` (which adds `Adoption` and `Passing` columns), place this preset **after** the merge confidence preset so the npmx columns are included:
+
+```json
+{
+  "extends": [
+    "config:recommended",
+    "mergeConfidence:all-badges",
+    "github>OrbisK/renovate-config-npmx"
+  ]
+}
+```
+
+If you want all Merge Confidence columns (`Adoption`, `Passing`) alongside the npmx badges, override `prBodyColumns` explicitly:
+
+```json
+{
+  "extends": [
+    "config:recommended",
+    "mergeConfidence:all-badges",
+    "github>OrbisK/renovate-config-npmx"
+  ],
+  "prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence", "npmx"]
 }
 ```
 

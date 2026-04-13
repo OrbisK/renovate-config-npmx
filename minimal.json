@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Add essential npmx.dev badges (downloads, vulnerabilities, deprecated) to Renovate PR bodies",
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "prBodyDefinitions": {
+        "npmx": "[![downloads](https://npmx.dev/api/registry/badge/downloads/{{depName}})](https://npmx.dev/package/{{depName}}) [![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/{{depName}})](https://npmx.dev/package/{{depName}}) [![deprecated](https://npmx.dev/api/registry/badge/deprecated/{{depName}})](https://npmx.dev/package/{{depName}})"
+      },
+      "prBodyColumns": ["Package", "Change", "Age", "Confidence", "npmx"]
+    }
+  ]
+}
