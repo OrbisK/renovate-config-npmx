@@ -38,12 +38,24 @@ Each badge type is available as a standalone preset with its own column:
 
 | Preset | Column | Badge |
 |--------|--------|-------|
-| `github>OrbisK/renovate-config-npmx:downloads` | npmx downloads | ![downloads](https://npmx.dev/api/registry/badge/downloads/vue) |
+| `github>OrbisK/renovate-config-npmx:version` | npmx version | ![version](https://npmx.dev/api/registry/badge/version/vue) |
 | `github>OrbisK/renovate-config-npmx:license` | npmx license | ![license](https://npmx.dev/api/registry/badge/license/vue) |
-| `github>OrbisK/renovate-config-npmx:types` | npmx types | ![types](https://npmx.dev/api/registry/badge/types/vue) |
 | `github>OrbisK/renovate-config-npmx:size` | npmx size | ![size](https://npmx.dev/api/registry/badge/size/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads` | npmx downloads | ![downloads](https://npmx.dev/api/registry/badge/downloads/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads-day` | npmx downloads-day | ![downloads-day](https://npmx.dev/api/registry/badge/downloads-day/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads-week` | npmx downloads-week | ![downloads-week](https://npmx.dev/api/registry/badge/downloads-week/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads-month` | npmx downloads-month | ![downloads-month](https://npmx.dev/api/registry/badge/downloads-month/vue) |
+| `github>OrbisK/renovate-config-npmx:downloads-year` | npmx downloads-year | ![downloads-year](https://npmx.dev/api/registry/badge/downloads-year/vue) |
 | `github>OrbisK/renovate-config-npmx:vulnerabilities` | npmx vulnerabilities | ![vulnerabilities](https://npmx.dev/api/registry/badge/vulnerabilities/vue) |
+| `github>OrbisK/renovate-config-npmx:dependencies` | npmx dependencies | ![dependencies](https://npmx.dev/api/registry/badge/dependencies/vue) |
+| `github>OrbisK/renovate-config-npmx:created` | npmx created | ![created](https://npmx.dev/api/registry/badge/created/vue) |
+| `github>OrbisK/renovate-config-npmx:updated` | npmx updated | ![updated](https://npmx.dev/api/registry/badge/updated/vue) |
+| `github>OrbisK/renovate-config-npmx:engines` | npmx engines | ![engines](https://npmx.dev/api/registry/badge/engines/vue) |
+| `github>OrbisK/renovate-config-npmx:types` | npmx types | ![types](https://npmx.dev/api/registry/badge/types/vue) |
+| `github>OrbisK/renovate-config-npmx:maintainers` | npmx maintainers | ![maintainers](https://npmx.dev/api/registry/badge/maintainers/vue) |
 | `github>OrbisK/renovate-config-npmx:deprecated` | npmx deprecated | ![deprecated](https://npmx.dev/api/registry/badge/deprecated/vue) |
+| `github>OrbisK/renovate-config-npmx:name` | npmx name | ![name](https://npmx.dev/api/registry/badge/name/vue) |
+| `github>OrbisK/renovate-config-npmx:likes` | npmx likes | ![likes](https://npmx.dev/api/registry/badge/likes/vue) |
 
 ### Columns preset
 
@@ -64,7 +76,7 @@ The `columns` preset defines all badge column definitions without setting `prBod
 }
 ```
 
-Available column names: `npmx` (all badges combined), `npmx downloads`, `npmx license`, `npmx types`, `npmx size`, `npmx vulnerabilities`, `npmx deprecated`.
+Available column names: `npmx` (all badges combined), `npmx version`, `npmx license`, `npmx size`, `npmx downloads`, `npmx downloads-day`, `npmx downloads-week`, `npmx downloads-month`, `npmx downloads-year`, `npmx vulnerabilities`, `npmx dependencies`, `npmx created`, `npmx updated`, `npmx engines`, `npmx types`, `npmx maintainers`, `npmx deprecated`, `npmx name`, `npmx likes`.
 
 ## Customizing `prBodyColumns`
 

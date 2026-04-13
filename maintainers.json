@@ -1,11 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Add essential npmx.dev badges to Renovate PR bodies",
+  "description": "Add npmx.dev maintainers badge to Renovate PR bodies",
   "extends": ["github>OrbisK/renovate-config-npmx:columns"],
   "packageRules": [
     {
       "matchDatasources": ["npm"],
-      "prBodyColumns": ["Package", "Change", "Age", "Confidence", "npmx"]
+      "prBodyColumns": ["Package", "Change", "Age", "Confidence", "npmx maintainers"]
     }
   ]
 }
