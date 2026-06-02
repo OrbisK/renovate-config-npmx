@@ -6,7 +6,8 @@
   "description": "Renovate preset that adds npmx.dev badges to PR bodies",
   "license": "ISC",
   "scripts": {
-    "release": "bumpp"
+    "release": "bumpp",
+    "validate-renovate": "pnpx --package renovate -- renovate-config-validator --strict $(ls *.json | grep -v package.json)"
   },
   "devDependencies": {
     "bumpp": "^11.0.1"
